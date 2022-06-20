@@ -17,6 +17,8 @@ int main() {
     student1.year = 2020;
     student1.result = 0.01;
 
+        
+    cout << endl;
     cout << "Student1 name : "<< student1.name << endl;
     cout << "Student1 ID : " << student1.id << endl;
     cout << "Stdent1 Admission year : " << student1.year << endl;

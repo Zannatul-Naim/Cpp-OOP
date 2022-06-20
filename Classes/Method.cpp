@@ -25,8 +25,6 @@ int Method :: speed(int maxSpeed) {
 }
 
 
-
-
 int main() {
     Method method;
 

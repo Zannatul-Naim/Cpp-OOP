@@ -7,7 +7,7 @@ class Method {
         srand(time(0));
         cout << "Random integer between (1-10): " << (rand()%10 +1) << endl;
     }
-    
+    // returns a random value
     int getRandomValue() {
         srand(time(0));
         return (rand()%100 +1);
@@ -18,7 +18,7 @@ class Method {
     int speed(int maxSpeed);
 
 };
-
+ // accessing method from outside the class
 int Method :: speed(int maxSpeed) {
     if(maxSpeed > 200) maxSpeed = 200;
     return maxSpeed;
@@ -26,14 +26,15 @@ int Method :: speed(int maxSpeed) {
 
 
 int main() {
-    Method method;
+    Method method;  // Creating a objects
 
     method.RandomValue();
 
     cout << "Random value between (1-100): " << method.getRandomValue() << endl;
     method.display();
 
-    cout << "Speed : " << method.speed(210) << endl;
+    cout << "Speed : " << method.speed(210) << endl;  // calling speed method from the Method class
+
     return 0;
 }
 

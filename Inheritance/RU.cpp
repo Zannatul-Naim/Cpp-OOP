@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class RU {
+class RU {  // class RU is the Parent of all department class
     public:
     string name = "University of Rajshahi";
 };
 
-class CSE : public RU {
+class CSE : public RU {  // CSE inherits characteristics of RU class
     public: 
         string department = "Department of CSE";
 };
